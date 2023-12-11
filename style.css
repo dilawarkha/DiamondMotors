@@ -587,7 +587,7 @@ footer{
         font-size: 4vw;
 
     }
-    .info{
+    .imginfo.info{
          flex-direction: column;
     }
 
