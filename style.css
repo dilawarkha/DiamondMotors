@@ -676,6 +676,7 @@ footer{
     .about .about-container {
        flex-direction: column;
         padding: 10px;
+        margin-bottom:20px;
        
     }
 
