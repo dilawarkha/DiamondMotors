@@ -655,6 +655,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-item:center;
         text-align: center;
         gap: 30px;
     }
