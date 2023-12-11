@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        .about1 {
+            padding-top: 50px;
+            border-bottom: 1px solid white;
+            margin-top: 100px;
+            padding: 15px;
+            min-height: 510px;
+            text-align: center;
+            color: white;
+
+        }
+
+        .about1 h1 {
+            padding-top: 30px;
+        }
+
+        .about1 .about-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            padding-top: 30px;
+        }
+
+        .about1 .about-container .right {
+            width: 40%;
+
+
+        }
+
+        .about1 .about-container .right img {
+            border-radius: 7px;
+            width: 80%;
+        }
+
+        .about1 .about-container .left {
+            width: 40%;
+            padding-top: 50px;
+        }
+
+        @media(max-width:500px) {
+            .about1 .about-container {
+                flex-direction: column;
+                padding: 10px;
+
+            }
+
+            .about1 .about-container .right {
+                width: 100%;
+
+
+            }
+
+            .about1 .about-container .right img {
+                border-radius: 7px;
+                width: 100%;
+            }
+
+            .about1 .about-container .left {
+                width: 100%;
+                padding-top: 10px;
+
+            }
+
+        }
+
+        .fixed-cnt {
+            position: sticky;
+            display: inline-block;
+            height: 70px;
+            width: 140px;
+            color: rgb(252, 0, 0);
+            background-color: rgb(81, 255, 0);
+            margin-top: 0px;
+            margin-left: 80vw;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="name">
+        <h1>DIAMOND</h1>
+        <h2>MOTORS</h2>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="about1">
+        <h1><u>ABOUT US</u></h1>
+        <div class="about-container">
+            <div class="right"><img src="tip trailer.jpg" alt=""></div>
+            <div class="left">
+                <p>Established in 2020, DIAMOND MOTORS® has emerged as the leading manufacturer of Flatbed-Trailers in
+                    Jamshedpur. With an expansive product range and unparalleled production capacity, we have set new
+                    benchmarks
+                    in the industry. Our expertise extends to a wide range of trailers, including tippers,
+                    box
+                    trailers, semi low bed trailers, flat bed trailers, skeletal trailers, and customized trailers for
+                    diverse applications.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>All Rights Reserved Diamond MOTORS®
+    </footer>
+</body>

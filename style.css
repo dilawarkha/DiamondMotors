@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.name {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.name h1 {
+    color: red;
+    margin-right: 5px;
+    font-size: 7vw;
+}
+
+.name h2 {
+    color: white;
+    font-size: 7vw;
+}
+
+nav {
+    height: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.973);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    height: 30px;
+    position: fixed;
+    z-index: 99999;
+
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 5px 35px 0px 35px;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+
+}
+
+.imginfo {
+    height: 500px;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 100px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-top: 20px;
+
+}
+
+.imginfo h1 {
+    font-size: 3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.imginfo h1::before {
+    content: "DRIVEN BY INNOVATION AND QUALITY";
+    position: absolute;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke: 4px #ffffff;
+    z-index: -1;
+}
+
+
+
+.scroller-in::-webkit-scrollbar {
+    display: none;
+}
+
+.scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 10;
+
+}
+
+.scroller h4:hover {
+    color:  #00ff00;
+}
+
+.scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroller;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.scroller h4 {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 300px;
+    color: transparent;
+    transition: all linear 0.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: 2px #00ff00;
+}
+
+@keyframes scroller {
+    from {
+        transform: translateX(0);
+
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.imginfo .info {
+    margin-left: 170px;
+    margin-top: -40px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+
+}
+
+.imginfo .info a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+
+}
+
+.imginfo .info a:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+
+}
+
+.imginfo .info .red {
+    padding-top: 5px;
+    font-weight: bolder;
+    border: 2px solid rgb(123, 255, 0);
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.836);
+    margin-left: 40px;
+    margin-top: 200px;
+
+
+}
+
+.about {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.about h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+/* PRODUCTS PAGE */
+.container-pro {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 1px solid white;
+
+}
+
+.container-pro1 {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 1px solid white;
+    margin-top: 100px;
+}
+
+.container-pro h1 {
+
+    margin-top: 20px;
+
+}
+
+.container-pro1 h1 {
+
+    margin-top: 20px;
+
+}
+
+.home-products {
+    height: 400px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.home-products .trailer img {
+    width: 300px;
+    padding: 10px;
+}
+
+.home-products .trailer {
+    border: 1px solid white;
+    width: 350px;
+}
+
+.home-products .trailer h3 {
+    color: white;
+}
+
+.home-products .trailer p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+    color: white;
+}
+
+.home-products .trailer button {
+    padding: 5px;
+    border: 1px solid black;
+    left: 50%;
+    background-color: #ff0000;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.home-products .trailer button a {
+    text-decoration: none;
+    color: white;
+}
+
+.products {
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid white;
+
+}
+
+.products .title {
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+.tipt {
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    margin-top: 100px;
+    padding-top: 30px;
+}
+
+.tip {
+    display: flex;
+    background-color: black;
+    margin-top: 40px;
+}
+
+.tip .info {
+    color: white;
+    width: 50%;
+    background-color: black;
+    line-height: 27px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tip .info h3 {
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 40px;
+    color: red;
+
+}
+
+.tip .info ul {
+    margin-top: 20px;
+}
+
+.products h1 {
+    margin-top: 20px;
+}
+
+.tip .img {
+    width: 50%;
+}
+
+/* about */
+.about {
+    padding: 15px;
+    min-height: 500px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.about .about-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.about .about-container .right {
+    width: 40%;
+
+
+}
+
+.about .about-container .right img {
+    border-radius: 7px;
+    width: 80%;
+}
+
+.about .about-container .left {
+    width: 40%;
+    padding-top: 50px;
+}
+
+
+/* highlights */
+
+.highlights{
+    min-height:600px ;
+    width: 100%;
+    background-color: red;
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.highlights h1{
+    font-family: cursive;
+}
+.highlights .numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+.highlights .numbers .box1{
+    height: 70px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius:5px ;
+    box-shadow: 0px 0px 0px 10px rgb(255, 255, 255);
+    font-weight: bold;
+    padding-top: 7px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+
+}
+
+/* Advantages */
+.advantages{
+    min-height: 400px;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+.advantages h1{
+    font-family: cursive;
+}
+.advantages .a-1{
+    color: red;
+   font-weight: bold;
+}
+.advantages h1{
+    margin-top: 20px;
+   
+}
+.advantages h2{
+    margin-top: 50px;
+   border: 1px solid black;
+   border-radius: 7px;
+   font-family:cursive;
+
+}
+/* contact page */
+
+.contact-container {
+    min-height: 400px;
+    width: 100%;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.contact-container .p1 {
+    padding-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.contact-container h1 {
+    padding-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.contact-container p {
+    font-size: 2vw;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.number-cnt1{
+    display: flex;
+}
+.contact-container .email{
+    display: flex;
+}
+.contact-container .box-cnt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.contact-container .box-cnt img{
+    margin-top: 8px;
+}
+ /* Sticky Contact Box Styles */
+ .sticky-contact {
+           
+    text-align: center;
+    border-radius: 7px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    padding: 15px;
+    animation: blink-shadow 0.1s infinite alternate;
+    transition: box-shadow 0.1s ease-in-out;
+    z-index: 9999;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    font-size: 15px;
+    font-family: cursive;
+
+}
+.contact-info .number-cnt{
+    display: flex;
+    
+}
+.contact-info .number-cnt img{
+    height: 35px;
+    width: 30px;
+    
+}
+.developer{
+    text-align: center;
+    padding-top:30px ;
+    font-weight: bold;
+}
+/* Blinking Box Shadow Animation */
+@keyframes blink-shadow {
+    0% {
+        box-shadow: 0 0 4px  10px yellow;
+    }
+
+    100% {
+        box-shadow: 0 0 4px 10px rgba(0, 255, 42, 0.8);
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 500px) {
+    .sticky-contact {
+        bottom: 10px;
+        right: 10px;
+        font-size: 14px;
+        padding: 10px;
+        height: 70px;
+    width: 150px;
+    }
+}
+footer{
+    height: 30px;
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    padding: 3px;
+    
+}
+.developer{
+    min-height: 100px;
+    width: 100%;
+    background-color: rgb(231, 223, 223);
+}
+/* responsive */
+@media(max-width:500px) {
+    .name {
+        height: 60px;
+
+    }
+
+    .name h1 {
+        margin-top: 5px;
+        font-size: 9vw;
+    }
+
+    .name h2 {
+        margin-top: 5px;
+        font-size: 9vw;
+    }
+
+    nav {
+        height: 40px;
+        width: 100%;
+        padding-top: 5px;
+        top: 60px;
+
+
+    }
+
+    .scroller h4 {
+
+        font-size: 30px;
+        font-weight: 200px
+    }
+
+    .imginfo h1 {
+
+        font-size: 4vw;
+
+    }
+
+    .imginfo h1::before {
+
+        -webkit-text-stroke: 2px #ffffff;
+
+    }
+
+    .imginfo {
+        height: 400px;
+    }
+
+
+    .imginfo .info .red {
+
+        height: 30px;
+        width: 200px;
+        background-color: white;
+        margin-left: 0px;
+        margin-top: 20px;
+
+
+    }
+
+    .imginfo .info {
+        margin-left: 20px;
+        margin-top: 70px;
+    }
+
+    nav ul li {
+
+        padding: 5px 10px 0px 10px;
+
+
+    }
+    nav ul li a{
+        text-decoration:underline;
+    }
+
+    .tip {
+        flex-direction: column;
+    }
+
+    .tipt {
+        padding-top: 0px;
+    }
+
+    .tip .info {
+        margin-left: px;
+        width: 90%;
+        padding: 10px;
+        margin-left: 20PX;
+    }
+
+    .tip .img img {
+        width: 300px;
+        margin-left: 27px;
+    }
+
+    .home-products {
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home-products .trailer img {
+        width: 260px;
+        padding: 10px;
+    }
+
+    .home-products .trailer {
+        padding: 5px;
+        width: 305px;
+        margin-left: 20px;
+        border-radius: 7px;
+    }
+
+    /*about*/
+    .about .about-container {
+       flex-direction: column;
+        padding: 10px;
+       
+    }
+
+    .about .about-container .right {
+        width: 100%;
+
+
+    }
+
+    .about .about-container .right img {
+        border-radius: 7px;
+        width: 100%;
+    }
+
+    .about .about-container .left {
+        width: 100%;
+        padding-top: 10px;
+
+    }
+
+    .contact-container .p1 {
+        font-size: 5vw;
+    }
+
+    .contact-container h1 {
+        font-size: 12vw;
+    }
+
+    .contact-container p {
+
+        font-size: 5vw;
+    }
+
+   
+}
