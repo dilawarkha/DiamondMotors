@@ -587,6 +587,9 @@ footer{
         font-size: 4vw;
 
     }
+    .info{
+         flex-direction: column;
+    }
 
     .imginfo h1::before {
 
